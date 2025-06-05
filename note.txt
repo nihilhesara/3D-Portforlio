@@ -1,5 +1,5 @@
 1. npm install
-2. npm install -D tailwindcss
+2. npm install -D tailwindcss postcss autoprefixer
 
 shortcut keys
 1. rafce - to quickly create a functional component
