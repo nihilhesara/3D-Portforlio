@@ -6,7 +6,8 @@ function Skills() {
     <section id="skills" className="skills-section">
       <h2>Skills</h2>
       <ul className="skills-list">
-        <li>HTML/CSS</li>
+        <li>HTML</li>
+        <li>CSS</li>
         <li>JavaScript</li>
         <li>React</li>
         <li>Node.js</li>

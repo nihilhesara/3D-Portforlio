@@ -15,12 +15,12 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      <Projects />
-      <Skills />
-      <Contact />
       <Experience />
       <Education />
+      <Projects />
+      <Skills />
       <Certifications />
+      <Contact />
     </div>
   );
 }

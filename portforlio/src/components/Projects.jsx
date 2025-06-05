@@ -8,7 +8,7 @@ function Projects() {
   ];
 
   return (
-    <section id="projects" className="projects-section">
+    <section id="projects" className="card-section">
       <h2>Projects</h2>
       <div className="project-cards">
         {projectList.map((proj, index) => (
