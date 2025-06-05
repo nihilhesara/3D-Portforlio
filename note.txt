@@ -1,7 +1,5 @@
 1. npm install
-2. npm install gsap
-3. npm install gsap @gsap/react three @react-three/fiber @react-three/drei @react-three/post
-processing
+2.
 
 shortcut keys
 1. rafce - to quickly create a functional component
