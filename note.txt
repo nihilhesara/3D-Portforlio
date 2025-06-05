@@ -1,0 +1,8 @@
+1. tailwind install - npm install tailwindcss @tailwindcss/vite
+   (https://tailwindcss.com/docs/installation/using-vite)
+
+2. npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-tilt react-vertical-timelin
+e-component @emailjs/browser framer-motion react-router-dom
+
+3. npm install prop-types --legacy-peer-deps
+
