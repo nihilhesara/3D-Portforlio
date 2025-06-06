@@ -1,22 +1,22 @@
-.card-section {
+.certifications-section {
   padding: 4rem 1rem;
   background-color: #393E46;
   text-align: center;
 }
 
-.card-section h2 {
+.certifications-section h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
   color: #DFD0B8;
 }
 
-.card-container {
-  display: flex;
-  flex-direction: column;
+.certifications-container {
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 1.5rem;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
-  align-items: stretch;
+  padding: 0 1rem;
 }
 
 .card {
@@ -26,7 +26,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: left;
-  width: 100%;
 }
 
 .card:hover {
@@ -43,4 +42,16 @@
 .card p {
   color: #DFD0B8;
   margin: 0.3rem 0;
+}
+
+@media (min-width: 600px) {
+  .certifications-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .certifications-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
