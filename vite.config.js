@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/3D-Portforlio/',  // ← this must match your repo name
+  base: '/',  
 })
