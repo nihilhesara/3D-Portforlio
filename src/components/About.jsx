@@ -24,16 +24,16 @@ function About() {
         </div>
         <div className="nhds-about-stats nhds-reveal-stagger">
           <div className="nhds-stat">
-            <div className="num">5+</div>
+            <div className="num">5</div>
             <div className="lbl">Projects Shipped</div>
           </div>
           <div className="nhds-stat">
-            <div className="num">5</div>
+            <div className="num">6</div>
             <div className="lbl">Certifications</div>
           </div>
           <div className="nhds-stat">
-            <div className="num">2yr</div>
-            <div className="lbl">Tutoring A/L</div>
+            <div className="num">3</div>
+            <div className="lbl">Roles Held</div>
           </div>
           <div className="nhds-stat">
             <div className="num">10+</div>

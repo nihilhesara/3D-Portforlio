@@ -2,10 +2,41 @@ import React from 'react';
 import './Skills.css';
 
 const GROUPS = [
-  { title: 'Frontend', num: '01', items: [['HTML', .95], ['CSS', .9], ['JavaScript', .85], ['React', .8]] },
-  { title: 'Backend', num: '02', items: [['Spring Boot', .75], ['Firebase', .85], ['MySQL', .8]] },
-  { title: 'Languages', num: '03', items: [['Python', .9], ['Java', .85]] },
-  { title: 'Mobile & Tools', num: '04', items: [['Flutter', .85], ['Git', .9], ['Postman', .8]] },
+  {
+    title: 'Frontend',
+    num: '01',
+    items: ['HTML', 'CSS', 'JavaScript', 'React', 'React Native'],
+  },
+  {
+    title: 'Backend',
+    num: '02',
+    items: ['Spring Boot', 'Express JS', 'Firebase', 'MySQL', 'REST APIs'],
+  },
+  {
+    title: 'Languages',
+    num: '03',
+    items: ['Python', 'Java', 'Swift', 'Dart'],
+  },
+  {
+    title: 'Mobile',
+    num: '04',
+    items: ['Flutter', 'Android', 'iOS', 'App Store Connect'],
+  },
+  {
+    title: 'ERP & Odoo',
+    num: '05',
+    items: ['Odoo 16', 'Odoo 17', 'Custom Modules', 'OWL Framework', 'QWeb Templates', 'Python (Odoo)'],
+  },
+  {
+    title: 'Tools & Platforms',
+    num: '06',
+    items: ['Git', 'GitHub', 'Postman', 'n8n', 'Google Colab'],
+  },
+  {
+    title: 'AI & Data',
+    num: '07',
+    items: ['Machine Learning', 'Scikit-learn', 'Pandas', 'Gemini API', 'WhatsApp Business API'],
+  },
 ];
 
 function Skills() {
@@ -23,12 +54,11 @@ function Skills() {
               <h3 className="nhds-skill-group-title">{g.title}</h3>
               <span className="nhds-skill-group-num">/ {g.num}</span>
             </div>
-            {g.items.map(([name, lvl]) => (
-              <div key={name} className="nhds-skill-row">
-                <span className="name">{name}</span>
-                <span className="bar" style={{ '--lvl': lvl }}></span>
-              </div>
-            ))}
+            <div className="nhds-skill-chips">
+              {g.items.map(name => (
+                <span key={name} className="nhds-skill-chip">{name}</span>
+              ))}
+            </div>
           </div>
         ))}
       </div>
