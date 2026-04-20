@@ -1,39 +1,30 @@
+import React from 'react';
 import './Certification.css';
+
+const CERTS = [
+  { h: 'Generative AI Fundamentals', org: 'Microsoft + LinkedIn Learning', date: '2024' },
+  { h: 'Postman Student Expert', org: 'Postman', date: 'Nov 2024' },
+  { h: 'Python for Beginners', org: 'University of Moratuwa', date: 'Jan 2024' },
+  { h: 'Web Design for Beginners', org: 'University of Moratuwa', date: 'Jan 2024' },
+  { h: 'Web Development', org: 'Informatics Institute of Technology', date: 'Jan 2024' },
+];
 
 function Certifications() {
   return (
-    <section id="certifications" className="certifications-section">
-      <h2>Certifications</h2>
-      <div className="certifications-container">
-        <div className="card">
-          <h3>Generative AI Fundamentals</h3>
-          <p>Microsoft + LinkedIn Learning</p>
-          <p><em>Completed: 2024</em></p>
-        </div>
-
-        <div className="card">
-          <h3>Postman Student Expert</h3>
-          <p>Postman</p>
-          <p><em>Completed: Nov 2024</em></p>
-        </div>
-
-        <div className="card">
-          <h3>Python for Beginners</h3>
-          <p>University of Moratuwa</p>
-          <p><em>Completed: Jan 2024</em></p>
-        </div>
-
-        <div className="card">
-          <h3>Web Design for Beginners</h3>
-          <p>University of Moratuwa</p>
-          <p><em>Completed: Jan 2024</em></p>
-        </div>
-
-        <div className="card">
-          <h3>Web Development</h3>
-          <p>Informatics Institute of Technology</p>
-          <p><em>Completed: Jan 2024</em></p>
-        </div>
+    <section id="certifications" className="nhds-section">
+      <header className="nhds-section-head nhds-reveal">
+        <span className="nhds-section-num">04 — Credentials</span>
+        <h2 className="nhds-section-title">Certifications <em>earned.</em></h2>
+        <span className="nhds-section-rule"></span>
+      </header>
+      <div className="nhds-certs nhds-reveal-stagger">
+        {CERTS.map((c, i) => (
+          <div key={i} className="nhds-cert">
+            <h3>{c.h}</h3>
+            <p className="org">{c.org}</p>
+            <p className="date">{c.date}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
